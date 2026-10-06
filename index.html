@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HG Inversión</title>
+<style>
+:root{color-scheme:dark;--bg:#07111f;--card:#101d30;--muted:#8ea3bd;--green:#2bd576;--line:#21324a}
+*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:#f6f8fb}
+header{padding:24px 18px;border-bottom:1px solid var(--line)}h1{margin:0;font-size:25px}.sub{color:var(--muted);margin-top:5px}
+main{max-width:1100px;margin:auto;padding:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}.label{font-size:12px;color:var(--muted);text-transform:uppercase}
+.value{font-size:25px;font-weight:750;margin:7px 0}.ok{color:var(--green)}h2{font-size:17px;margin:24px 0 10px}
+table{width:100%;border-collapse:collapse}.scroll{overflow:auto}.scroll td,.scroll th{padding:12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+button{background:#18304d;color:white;border:1px solid #294969;border-radius:10px;padding:9px 12px}
+.note{font-size:13px;color:var(--muted);line-height:1.45}
+</style></head>
+<body>
+<header><h1>HG Inversión</h1><div class="sub">Panel personal de mercado y cartera</div></header>
+<main>
+<div class="grid">
+<div class="card"><div class="label">Estado</div><div class="value ok">Base activa</div><div class="note">Primera versión conectable a fuentes gratuitas.</div></div>
+<div class="card"><div class="label">Aporte semanal</div><div class="value">$ 500.000</div><div class="note">Referencia editable para planificar compras.</div></div>
+<div class="card"><div class="label">Sentimiento</div><div class="value">— / 100</div><div class="note">Se mostrará únicamente cuando exista una fuente real disponible.</div></div>
+<div class="card"><div class="label">Señal</div><div class="value">Esperando datos</div><div class="note">No se generan señales con valores inventados.</div></div>
+</div>
+<h2>Radar</h2><div class="card scroll"><table><thead><tr><th>Activo</th><th>Precio</th><th>Variación</th><th>Señal</th></tr></thead>
+<tbody><tr><td>NU</td><td>—</td><td>—</td><td>Esperando datos</td></tr><tr><td>YPF</td><td>—</td><td>—</td><td>Esperando datos</td></tr><tr><td>SPY</td><td>—</td><td>—</td><td>Esperando datos</td></tr><tr><td>BTC</td><td>—</td><td>—</td><td>Esperando datos</td></tr><tr><td>SOL</td><td>—</td><td>—</td><td>Esperando datos</td></tr></tbody></table></div>
+<h2>Cartera</h2><div class="card"><div class="note">Acá vamos a importar operaciones de Cocos por archivo, sin pedir tu contraseña. Luego calcularemos precio promedio, ganancia/pérdida y distribución.</div></div>
+<h2>Próxima etapa</h2><div class="card"><div class="note">Conectar precios reales gratuitos, gráficos, medias móviles, soportes/resistencias, noticias, calendario y alertas. Cuando un dato sea demorado, HG Inversión lo indicará claramente.</div></div>
+</main></body></html>
