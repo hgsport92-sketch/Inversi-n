@@ -1,37 +1,28 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>HG Inversión</title>
-<style>
-:root{color-scheme:dark;--bg:#07111f;--card:#101d30;--muted:#8ea3bd;--green:#2bd576;--line:#21324a}
-*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:#f6f8fb}
-header{padding:24px 18px;border-bottom:1px solid var(--line)}h1{margin:0;font-size:25px}.sub{color:var(--muted);margin-top:5px}
-main{max-width:1100px;margin:auto;padding:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}.label{font-size:12px;color:var(--muted);text-transform:uppercase}
-.value{font-size:25px;font-weight:750;margin:7px 0}.ok{color:var(--green)}h2{font-size:17px;margin:24px 0 10px}
-table{width:100%;border-collapse:collapse}.scroll{overflow:auto}.scroll td,.scroll th{padding:12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
-.note{font-size:13px;color:var(--muted);line-height:1.45}
-</style></head>
-<body>
-<header><h1>HG Inversión</h1><div class="sub">Panel personal de mercado y cartera</div></header>
-<main>
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>HG Inversión</title>
+<style>:root{color-scheme:dark;--bg:#07111f;--card:#101d30;--muted:#8ea3bd;--green:#2bd576;--red:#ff6b6b;--line:#21324a}*{box-sizing:border-box}body{margin:0;font-family:system-ui,-apple-system,sans-serif;background:var(--bg);color:#f6f8fb}header{padding:24px 18px;border-bottom:1px solid var(--line)}h1{margin:0;font-size:25px}.sub,.note{color:var(--muted)}main{max-width:1100px;margin:auto;padding:18px}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px}.label{font-size:12px;color:var(--muted);text-transform:uppercase}.value{font-size:24px;font-weight:750;margin:7px 0}.ok{color:var(--green)}.bad{color:var(--red)}h2{font-size:17px;margin:24px 0 10px}table{width:100%;border-collapse:collapse}.scroll{overflow:auto}.scroll td,.scroll th{padding:12px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}.note{font-size:13px;line-height:1.45}</style></head><body>
+<header><h1>HG Inversión</h1><div class="sub">Cartera personal · datos cargados desde Cocos</div></header><main>
 <div class="grid">
-<div class="card"><div class="label">Estado</div><div class="value ok">Base activa</div><div class="note">Repositorio conectado a Cloudflare.</div></div>
-<div class="card"><div class="label">Aporte semanal</div><div class="value">$ 500.000</div><div class="note">Referencia para planificar compras.</div></div>
-<div class="card"><div class="label">Capital invertido registrado</div><div class="value">$ 1.017.518,97</div><div class="note">Operaciones cargadas hasta ahora.</div></div>
-<div class="card"><div class="label">Posiciones abiertas</div><div class="value">1</div><div class="note">FSLR · 65 unidades.</div></div>
+<div class="card"><div class="label">Portfolio Cocos</div><div class="value">$ 2.244.122,10</div><div class="note">Captura 06/10/2026.</div></div>
+<div class="card"><div class="label">Pesos disponibles</div><div class="value">$ 503.561,29</div></div>
+<div class="card"><div class="label">A liquidar</div><div class="value">$ 262.368,23</div></div>
+<div class="card"><div class="label">Aporte semanal objetivo</div><div class="value">$ 500.000</div></div></div>
+<h2>Posiciones abiertas</h2><div class="card scroll"><table><thead><tr><th>Activo</th><th>Cantidad</th><th>Valor</th><th>Rendimiento mostrado</th><th>Resultado histórico</th></tr></thead><tbody>
+<tr><td><b>FSLR · First Solar</b></td><td>65</td><td>$ 1.043.250,00</td><td class="ok">+2,35% día</td><td class="ok">+2,53% · +$25.731,03</td></tr>
+<tr><td><b>NU · NU Bank</b></td><td>33</td><td>$ 415.140,00</td><td class="ok">+3,27% día</td><td class="ok">+3,60% · +$5.243,71</td></tr>
+<tr><td><b>SPY · S&P 500</b></td><td>5</td><td>$ 104.700,00</td><td class="ok">+0,86% día</td><td class="ok">+2,48% · +$2.535,62</td></tr>
+<tr><td><b>TEM · Tempus AI</b></td><td>8</td><td>$ 76.920,00</td><td class="bad">-13,34% día</td><td>—</td></tr>
+<tr><td><b>Cocos Crypto</b></td><td>—</td><td>$ 100.550,81</td><td>—</td><td>SOL mostrado: +0,56% · +$561,20</td></tr>
+<tr><td><b>YPFD · YPF</b></td><td>—</td><td>—</td><td>—</td><td class="ok">+51,01% · +$27.850,00</td></tr>
+</tbody></table><div class="note" style="margin-top:12px">YPF aparece en Cocos como inversión abierta, pero la captura no muestra cantidad ni valor actual; se dejan sin inventar.</div></div>
+<h2>Detalle NU</h2><div class="grid">
+<div class="card"><div class="label">Último precio captura</div><div class="value">$ 12.580,00</div><div class="note">33 NU · precio promedio $12.143,02.</div></div>
+<div class="card"><div class="label">Compra confirmada 05/10</div><div class="value">12 NU</div><div class="note">$12.070 c/u · total $145.716,28 · orden 14842100 · liquidación 06/10/2026.</div></div>
 </div>
-<h2>Cartera</h2>
-<div class="card scroll"><table><thead><tr><th>Activo</th><th>Cantidad</th><th>Precio ejecución</th><th>Precio promedio</th><th>Fecha</th><th>Importe</th></tr></thead>
-<tbody><tr><td><b>FSLR · First Solar</b></td><td>65</td><td>$ 15.560,00</td><td>$ 15.654,13</td><td>29/09/2026</td><td>$ 1.017.518,97</td></tr></tbody></table>
-<div class="note" style="margin-top:12px">Orden Cocos 147466006 · Liquidación 30/09/2026. El precio promedio refleja los gastos informados por Cocos.</div></div>
-<h2>Último dato de la captura</h2>
-<div class="grid">
-<div class="card"><div class="label">FSLR</div><div class="value">$ 16.050,00</div><div class="note">Precio mostrado en Cocos en la captura enviada. No es cotización en vivo.</div></div>
-<div class="card"><div class="label">Valor de posición</div><div class="value">$ 1.043.250,00</div><div class="note">65 FSLR según la captura.</div></div>
-<div class="card"><div class="label">Resultado no realizado</div><div class="value ok">+$ 25.731,02</div><div class="note">+2,53% según Cocos.</div></div>
-</div>
-<h2>Radar</h2><div class="card scroll"><table><thead><tr><th>Activo</th><th>Precio</th><th>Variación</th><th>Señal</th></tr></thead>
-<tbody><tr><td>FSLR</td><td>—</td><td>—</td><td>Esperando datos en vivo</td></tr><tr><td>NU</td><td>—</td><td>—</td><td>Esperando datos</td></tr><tr><td>SPY</td><td>—</td><td>—</td><td>Esperando datos</td></tr><tr><td>BTC</td><td>—</td><td>—</td><td>Esperando datos</td></tr><tr><td>SOL</td><td>—</td><td>—</td><td>Esperando datos</td></tr></tbody></table></div>
+<h2>Operaciones confirmadas</h2><div class="card scroll"><table><thead><tr><th>Activo</th><th>Fecha</th><th>Cantidad</th><th>Precio ejecución</th><th>Total / costo registrado</th><th>Orden</th></tr></thead><tbody>
+<tr><td>NU</td><td>05/10/2026</td><td>12</td><td>$12.070,00</td><td>$145.716,28</td><td>14842100</td></tr>
+<tr><td>FSLR</td><td>29/09/2026</td><td>65</td><td>$15.560,00</td><td>$1.017.518,97</td><td>147466006</td></tr>
+</tbody></table></div>
+<h2>Inversiones cerradas</h2><div class="card scroll"><table><thead><tr><th>Activo</th><th>Rendimiento histórico mostrado</th></tr></thead><tbody>
+<tr><td>SATL · Satellogic</td><td class="ok">+11,15% · +$62.979,93</td></tr><tr><td>COCORMA · Cocos Rendimiento FCI</td><td class="ok">+4,31% · +$23.470,37</td></tr>
+</tbody></table><div class="note" style="margin-top:12px">Valores tomados de la pantalla de rendimiento de Cocos.</div></div>
 </main></body></html>
